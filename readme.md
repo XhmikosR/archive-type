@@ -1,4 +1,4 @@
-# archive-type [![CI](https://github.com/kevva/archive-type/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/kevva/archive-type/actions/workflows/ci.yml)
+# archive-type [![CI](https://github.com/XhmikosR/archive-type/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/XhmikosR/archive-type/actions/workflows/ci.yml)
 
 > Detect the archive type of a Buffer/Uint8Array
 
@@ -6,14 +6,14 @@
 ## Install
 
 ```sh
-npm install archive-type
+npm install @xhmikosr/archive-type
 ```
 
 
 ## Usage
 
 ```js
-import archiveType from 'archive-type';
+import archiveType from '@xhmikosr/archive-type';
 import readChunk from 'read-chunk';
 
 const buffer = readChunk.sync('unicorn.zip', 0, 262);
