@@ -1,5 +1,4 @@
-'use strict';
-const fileType = require('file-type');
+import fileType from 'file-type';
 
 const exts = new Set([
 	'7z',
@@ -9,10 +8,11 @@ const exts = new Set([
 	'tar',
 	'zip',
 	'xz',
-	'gz'
+	'gz',
 ]);
 
-module.exports = input => {
-	const ret = fileType(input);
-	return exts.has(ret && ret.ext) ? ret : null;
+// eslint-disable-next-line import/no-anonymous-default-export
+export default input => {
+	const type = fileType(input);
+	return exts.has(type && type.ext) ? type : null;
 };

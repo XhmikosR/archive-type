@@ -1,20 +1,21 @@
-# archive-type [![Build Status](https://travis-ci.org/kevva/archive-type.svg?branch=master)](https://travis-ci.org/kevva/archive-type)
+# archive-type [![CI](https://github.com/kevva/archive-type/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/kevva/archive-type/actions/workflows/ci.yml)
 
 > Detect the archive type of a Buffer/Uint8Array
 
 
 ## Install
 
-```
-$ npm install --save archive-type
+```sh
+npm install archive-type
 ```
 
 
 ## Usage
 
 ```js
-const archiveType = require('archive-type');
-const readChunk = require('read-chunk');
+import archiveType from 'archive-type';
+import readChunk from 'read-chunk';
+
 const buffer = readChunk.sync('unicorn.zip', 0, 262);
 
 archiveType(buffer);
@@ -29,7 +30,7 @@ archiveType(buffer);
 Returns an `Object` with:
 
 - `ext` - One of the [supported file types](#supported-file-types)
-- `mime` - The [MIME type](http://en.wikipedia.org/wiki/Internet_media_type)
+- `mime` - The [MIME type](https://en.wikipedia.org/wiki/Media_type)
 
 Or `null` when no match.
 
