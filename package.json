@@ -49,10 +49,15 @@
 		"type"
 	],
 	"dependencies": {
-		"file-type": "^18.5.0"
+		"file-type": "^19.0.0"
 	},
 	"devDependencies": {
-		"ava": "^4.3.3",
-		"xo": "^0.54.2"
+		"ava": "^6.1.2",
+		"xo": "^0.58.0"
+	},
+	"xo": {
+		"rules": {
+			"unicorn/prevent-abbreviations": "off"
+		}
 	}
 }
