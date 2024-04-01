@@ -3,7 +3,10 @@
 	"version": "7.0.0",
 	"description": "Detect the archive type of a Buffer/Uint8Array",
 	"license": "MIT",
-	"repository": "XhmikosR/archive-type",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/XhmikosR/archive-type.git"
+	},
 	"publishConfig": {
 		"access": "public"
 	},
