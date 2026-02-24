@@ -15,6 +15,14 @@ test('tar', async t => {
 	t.is(mime, 'application/x-tar');
 });
 
+test('tar.gz', async t => {
+	const buf = await fs.readFile(path.join(__dirname, 'fixtures/test.tar.gz'));
+	const {ext, mime} = await archiveType(buf);
+
+	t.is(ext, 'tar.gz');
+	t.is(mime, 'application/gzip');
+});
+
 test('zip', async t => {
 	const buf = await fs.readFile(path.join(__dirname, 'fixtures/test.zip'));
 	const {ext, mime} = await archiveType(buf);

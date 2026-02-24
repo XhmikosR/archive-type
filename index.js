@@ -4,11 +4,11 @@ const extensions = new Set([
 	'7z',
 	'bz2',
 	'gz',
+	'tar.gz',
 	'rar',
 	'tar',
 	'zip',
 	'xz',
-	'gz',
 	'zst',
 ]);
 
