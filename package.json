@@ -52,11 +52,11 @@
 		"type"
 	],
 	"dependencies": {
-		"file-type": "^21.3.0"
+		"file-type": "^21.3.2"
 	},
 	"devDependencies": {
-		"ava": "^6.4.1",
-		"xo": "^1.2.3"
+		"ava": "^7.0.0",
+		"xo": "^2.0.2"
 	},
 	"xo": {
 		"rules": {
