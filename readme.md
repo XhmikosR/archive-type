@@ -1,4 +1,4 @@
-# archive-type [![npm version](https://img.shields.io/npm/v/@xhmikosr/archive-type?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@xhmikosr/archive-type) [![CI Status](https://img.shields.io/github/actions/workflow/status/XhmikosR/archive-type/ci.yml?branch=master&label=CI&logo=github)](https://github.com/XhmikosR/archive-type/actions/workflows/ci.yml?query=branch%3Amaster)
+# @xhmikosr/archive-type [![npm version](https://img.shields.io/npm/v/@xhmikosr/archive-type?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@xhmikosr/archive-type) [![CI Status](https://img.shields.io/github/actions/workflow/status/XhmikosR/archive-type/ci.yml?branch=master&label=CI&logo=github)](https://github.com/XhmikosR/archive-type/actions/workflows/ci.yml?query=branch%3Amaster)
 
 > Detect the archive type of a Buffer/Uint8Array
 
@@ -48,9 +48,9 @@ It only needs the first 262 bytes.
 - `gz`
 - `rar`
 - `tar`
-- `zip`
+- `tar.gz`
 - `xz`
-- `gz`
+- `zip`
 - `zst`
 
 
