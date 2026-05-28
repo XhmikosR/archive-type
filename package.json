@@ -44,7 +44,10 @@
 		"gz",
 		"gzip",
 		"mime",
+		"pkg",
 		"rar",
+		"tar.gz",
+		"tar",
 		"zip",
 		"zst",
 		"zstd",
@@ -60,6 +63,7 @@
 	},
 	"xo": {
 		"rules": {
+			"capitalized-comments": "off",
 			"unicorn/prevent-abbreviations": "off"
 		}
 	}

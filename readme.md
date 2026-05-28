@@ -46,6 +46,7 @@ It only needs the first 262 bytes.
 - `7z`
 - `bz2`
 - `gz`
+- `pkg`
 - `rar`
 - `tar`
 - `tar.gz`

@@ -39,6 +39,14 @@ test('zst', async t => {
 	t.is(mime, 'application/zstd');
 });
 
+test('pkg', async t => {
+	const buf = await fs.readFile(path.join(__dirname, 'fixtures/test.pkg'));
+	const {ext, mime} = await archiveType(buf);
+
+	t.is(ext, 'pkg');
+	t.is(mime, 'application/x-xar');
+});
+
 test('invalid', async t => {
 	const buf = Buffer.from('invalid');
 	const type = await archiveType(buf);
