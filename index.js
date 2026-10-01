@@ -26,7 +26,7 @@ const xarDetector = {
 			mayBeLess: true, // don't throw on inputs shorter than the magic bytes
 		});
 
-		if (head.toString('binary') === XAR_MAGIC) {
+		if (head.toString('latin1') === XAR_MAGIC) {
 			return {
 				ext: 'pkg',
 				mime: 'application/x-xar',
